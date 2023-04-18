@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
 # creating an abstract class
-class AbstractClass(ABC)
+class AbstractClass(ABC):
     @abstractmethod # abstract method
     def abstract_method(self):
         pass
@@ -18,4 +18,4 @@ class ChildClass(AbstractClass):
 # creating and object
 obj = ChildClass()
 obj.abstract_method()
-obj.regular_method
+obj.regular_method()
