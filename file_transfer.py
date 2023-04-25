@@ -92,7 +92,7 @@ class ParentWindow(Frame):
             #Calculates the time difference between current time and timestamp
             time_diff = current_time - file_timestamp
             #Checks if file has been modified within last 24 hours
-            if time_diff < time_day:
+            if time_diff > time_day:
                 #Moves the file from source to the dest
                 shutil.move(file_path, source)
                 print(file + ' was successfully transferred.')
